@@ -5,8 +5,7 @@ import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import reactor.core.publisher.Mono;
 
 /**
- * @author XIAO JIN
- * @date 2021/05/07/ 10:11
+ * Created by jt on 8/17/17.
  */
 public interface CategoryReactiveRepository extends ReactiveMongoRepository<Category, String> {
 
