@@ -29,7 +29,6 @@ jobs:
       - run:
           name: Test
           command: mvn clean test
-          
       - run:
           name: Save test results
           command: |
