@@ -12,14 +12,13 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 
 /**
- * @author XIAO JIN
- * @date 2021/05/08/ 10:10
+ * Created by jt on 8/29/17.
  */
 @Configuration
 public class WebConfig {
 
     @Bean
-    RouterFunction<?> routes(RecipeService recipeService){
+    public RouterFunction<?> routes(RecipeService recipeService){
         return RouterFunctions.route(GET("/api/recipes"),
                 serverRequest -> ServerResponse
                                     .ok()
